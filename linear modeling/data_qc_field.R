@@ -1,4 +1,4 @@
-setwd("../Desktop/Rworkshop")
+setwd("../Desktop/Rworkshop/linear modeling")
 
 # read in data and examine
 agdata<-read.csv("Combined_Data_15_02_19.csv",head=T)

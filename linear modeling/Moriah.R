@@ -1,5 +1,5 @@
 # Set working directory (change to where your file is located)
-setwd("../Desktop/Rworkshop")
+setwd("../Desktop/Rworkshop/linear modeling")
 
 # Read in dataset (I added the abs2-abs1 value and changed "%" to "Percent_",
 # but otherwise it's the same as what you sent)
@@ -47,7 +47,7 @@ anova(lm(DIGESTIBILITY~LINE+ROW+COL+PLATE))
 library(lme4)
 
 # Linear Model with random effects for variance components
-digvarcomp=lmer(DIGESTIBILITY~(1|LINE)+(1|COL)+(1|PLATE)+(1|LINE:COL)+(1|LINE:PLATE))
+digvarcomp<-lmer(DIGESTIBILITY~(1|LINE)+(1|COL)+(1|PLATE)+(1|LINE:COL)+(1|LINE:PLATE))
 # Extract variance components
 summary(digvarcomp)
 

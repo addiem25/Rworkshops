@@ -1,4 +1,4 @@
-setwd("../Desktop/Rworkshop")
+setwd("../Desktop/Rworkshop/linear modeling")
 
 #load data; needs to have columns called "Genotype", "Row", "Range", "Rep"
 leaf6data<-read.csv("leaf6area.csv",head=T)
